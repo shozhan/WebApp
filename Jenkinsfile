@@ -11,6 +11,7 @@ pipeline {
     stage('Deploy to QA') {
       steps {
         echo 'Email Lead - QA'
+        input 'Do you want to proceed to next step?'
       }
     }
 
