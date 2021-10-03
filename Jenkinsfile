@@ -16,14 +16,13 @@ pipeline {
     }
 
     stage('Initialize Automation Suite') {
+      when {
+        branch 'master'
+      }
       parallel {
         stage('Initialize Automation Suite') {
           steps {
             echo 'Starting UI Test'
-            when() {
-              branch 'master'
-            }
-
           }
         }
 
