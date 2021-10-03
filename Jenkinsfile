@@ -17,7 +17,7 @@ pipeline {
 
     stage('Initialize Automation Suite') {
       when {
-        branch 'master'
+        branch 'Jenkins-Pipeline'
       }
       parallel {
         stage('Initialize Automation Suite') {
